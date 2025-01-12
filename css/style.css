@@ -1,0 +1,178 @@
+/* Fuente del proyecto
+.anton-regular {
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+/* Reset */
+* {
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos generales */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+header {
+  height: 200px;
+  background-color: #231f20;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.logotipo {
+  height: 35%;
+  width: 35%;
+  border-radius: 30px;
+}
+
+body {
+  background-color: #636265;
+}
+
+.banner {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../media/coding.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.banner-texto {
+  position: absolute;
+  top: 500px;
+  left: 700px;
+}
+
+.nuestros-servicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  padding: 80px;
+  margin: 80px;
+  justify-content: center;
+}
+
+.servicios-texto {
+  padding-top: 6em;
+}
+
+.diseño-web,
+.diseño-uxui,
+.mkt,
+.seo {
+  width: 80%;
+  height: auto;
+  border-radius: 80px;
+}
+
+h1 {
+  color: #cab2ff;
+  text-align: center;
+  font-family: "Anton", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+h2 {
+  color: #f3f3f3;
+  text-align: center;
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+p {
+  color: #f3f3f3;
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul li a {
+  color: #f3f3f3;
+}
+
+.llamadas {
+  color: #07f2b4;
+}
+
+footer {
+  background-color: #231f20;
+  color: #07f2b4;
+  padding: 50px;
+  height: 100%;
+}
+
+.whatsapp-img {
+  position: absolute;
+  right: 5em;
+  width: 90px;
+  height: auto;
+}
+
+.sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nuestras-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+}
+
+.nuestras-redes h2 {
+  font-size: 80%;
+  margin-bottom: 15px;
+  padding: 80px;
+}
+
+.iconos-redes {
+  gap: 15px;
+}
+
+.instagram {
+  width: 80px;
+  height: auto;
+}
+
+.tik-tok {
+  width: 80px;
+  height: auto;
+}
