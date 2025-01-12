@@ -8,7 +8,6 @@
 
 /* Reset */
 * {
-  border: 1px solid red;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -51,38 +50,44 @@ body {
 .banner-texto {
   position: absolute;
   top: 500px;
-  left: 700px;
+  left: 1000px;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .nuestros-servicios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
-  padding: 80px;
-  margin: 80px;
-  justify-content: center;
+  gap: 70px;
+  padding: 90px;
 }
 
 .servicios-texto {
   padding-top: 6em;
+  text-align: center;
 }
 
 .diseño-web,
 .diseño-uxui,
 .mkt,
 .seo {
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 80px;
 }
 
 h1 {
   color: #cab2ff;
-  text-align: center;
   font-family: "Anton", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -91,7 +96,7 @@ h2 {
   font-family: "Anton", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -107,6 +112,7 @@ p {
   font-family: "Anton", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 2rem;
 }
 
 header nav ul {
@@ -134,14 +140,15 @@ footer {
   background-color: #231f20;
   color: #07f2b4;
   padding: 50px;
-  height: 100%;
+  height: 150%;
 }
 
 .whatsapp-img {
-  position: absolute;
+  position: fixed;
   right: 5em;
-  width: 90px;
-  height: auto;
+  width: 80px;
+  height: 80px;
+  bottom: 80px;
 }
 
 .sobre-nosotros {
@@ -155,6 +162,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   padding: 50px;
+  gap: 25px;
 }
 
 .nuestras-redes h2 {
@@ -168,11 +176,17 @@ footer {
 }
 
 .instagram {
-  width: 80px;
+  width: 120px;
   height: auto;
 }
 
 .tik-tok {
-  width: 80px;
+  width: 120px;
   height: auto;
+}
+
+.derechos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
