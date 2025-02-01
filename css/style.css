@@ -39,18 +39,19 @@ body {
 }
 
 .banner {
-  width: 100%;
-  height: 70vh;
+  width: 300vh;
+  height: 50vh;
   background-image: url(../media/coding.jpg);
   background-size: cover;
   background-position: center;
-  height: 700px;
 }
 
 .banner-texto {
   position: absolute;
-  top: 500px;
-  left: 1000px;
+  top: 800px;
+  left: 2000px;
+  text-shadow: 2px 2px 5px rgba (0, 0, 0, 2), -2px -2px 5px rgba(0, 0, 0, 2);
+  text-shadow: black;
 }
 
 .servicios {
@@ -59,6 +60,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
 }
 
 .nuestros-servicios {
@@ -154,7 +156,41 @@ footer {
 .sobre-nosotros {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.nosotros1 {
+  text-align: center;
+  padding-top: 8em;
+}
+
+.nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 80px;
+  padding: 50px;
+}
+
+.equipo {
+  width: 900px;
+  text-align: justify;
+}
+
+.nuestro-equipo img {
+  border-radius: 50px;
+  width: 100%;
+}
+
+.nuestro-equipo {
+  width: 1600px;
+}
+
+.lista-de-servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  gap: 10px;
+  padding: 10px;
+  justify-items: center;
 }
 
 .nuestras-redes {
