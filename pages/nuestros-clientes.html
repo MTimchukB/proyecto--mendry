@@ -6,6 +6,9 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Nuestros clientes</title>
   </head>
@@ -18,60 +21,92 @@
           class="logotipo" />
       </a>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="../pages/nuestros-servicios.html">Nuestros servicios</a>
-          </li>
-          <li>
-            <a href="../pages/nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="../pages/nuestros-clientes.html">Nuestros clientes</a>
-          </li>
-          <li>
-            <a href="../pages/contacto.html">Contacto</a>
-          </li>
-          <li>
-            <a href="https://calendly.com/timchukmartina/30min"
-              >AGENDA UNA LLAMADA</a
-            >
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container"></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/nuestros-servicios.html"
+                >Nuestros servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/nuestros-clientes.html"
+                >Nuestros clientes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://calendly.com/timchukmartina/30min?month=2025-02"
+                >AGENDA UNA LLAMADA</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Nuestros clientes</h1>
-      <img src="../media/avatar femenino.jpg" alt="Avatar femenino" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde
-        nobis incidunt accusamus vero distinctio modi praesentium. Hic error
-        nisi enim, earum mollitia fuga deserunt excepturi illo rerum repellat
-        dolor.
-      </p>
-
-      <img src="../media/avatar masculino.jpg" alt="Avatar masculino" />
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id nisi
-        quaerat temporibus exercitationem excepturi animi iure explicabo
-        provident pariatur assumenda, asperiores totam, magnam facilis
-        perspiciatis porro nihil, recusandae cumque hic!
-      </p>
-
-      <img src="../media/avatar femenino 2.jpg" alt="Avatar femenino 2" />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab corrupti
-        culpa doloribus aut autem nulla enim, consequatur qui adipisci commodi
-        perspiciatis laboriosam minima esse, pariatur ex cupiditate, nostrum
-        tempore asperiores.
-      </p>
-
-      <img src="../media/avatar masculino 2.jpg" alt="Avatar masculino 2" />
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quia
-        odit, accusamus eius error eos iure modi delectus culpa tempora nam
-        voluptatem id impedit, animi beatae illo! Nemo, a eligendi?
-      </p>
+      <section class="nuestros-clientes2">
+        <h1>Nuestros clientes</h1>
+      </section>
+      <section class="reseñas">
+        <div class="reseña-mujer1">
+          <img src="../media/avatar femenino.jpg" alt="Avatar femenino" />
+          <p>
+            Trabajar con Mendry Media ha sido un auténtico placer. Su equipo de
+            profesionales cualificados no sólo es experto en su campo, sino que
+            también se dedica a ofrecer un servicio y una asistencia de primera
+            categoría. Se tomaron el tiempo necesario para comprender nuestras
+            necesidades específicas y desarrollaron una solución a medida que
+            superó nuestras expectativas.
+          </p>
+        </div>
+        <div class="reseña-hombre1">
+          <img src="../media/avatar masculino.jpg" alt="Avatar masculino" />
+          <p>
+            Si están buscando una agencia de marketing fiable e innovadora, no
+            busque más allá de Mendry Media. Su equipo de experimentados
+            profesionales supera constantemente las expectativas, ofreciendo
+            soluciones de vanguardia y un servicio de atención al cliente
+            excepcional. Estamos encantados con los resultados y recomendamos
+            encarecidamente Mendry Media para cualquier necesidad de impulsar su
+            marca.
+          </p>
+        </div>
+        <div class="reseña-mujer2">
+          <img src="../media/avatar femenino 2.jpg" alt="Avatar femenino 2" />
+          <p>
+            Mendry Media es un equipo de excelentes profesionales con gran
+            conocimiento e idoneidad en el marketing digital. Los recomiendo a
+            toda empresa que este buscando crecer a través de estrategias
+            digitales. Somos clientes satisfechos hace mas de 7 años!
+          </p>
+        </div>
+        <div class="reseña-hombre2">
+          <img src="../media/avatar masculino 2.jpg" alt="Avatar masculino 2" />
+          <p>
+            Muy buena predisposición a resolver todo tipo de dudas o problemas
+            que se presentan a la hora de manejar una ecommerce. Siempre
+            aconsejando las mejores formas de encarar los diferentes proyectos
+            de marketing. Un lujo!
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -87,7 +122,10 @@
           <p>Todos los derechos reservados.</p>
         </div>
       </section>
-      <img src="../media/whatsapp.png" alt="WhatsApp" class="whatsapp-img" />
+      <a href="https://web.whatsapp.com/">
+        <img src="../media/whatsapp.png" alt="WhatsApp" class="whatsapp-img" />
+      </a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

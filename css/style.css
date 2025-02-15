@@ -54,20 +54,44 @@ body {
   text-shadow: black;
 }
 
+@keyframes .banner-texto {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX (200px);
+  }
+}
+
+.navbar-toggler {
+  background-color: #636265; 
+  border: 1px solid #07f2b4;
+}
+
+.navbar navbar-expand-lg bg-light {
+  background-color: #231f20;
+}
+
+
+
+
 .servicios {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
   padding-top: 80px;
+  width: 100%;
+  margin: auto;
 }
 
 .nuestros-servicios {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   gap: 70px;
   padding: 90px;
+  width: 100%;
+  padding-left: 600px;
+  padding-bottom: 400px;
 }
 
 .servicios-texto {
@@ -75,21 +99,29 @@ body {
   text-align: center;
 }
 
-.diseño-web,
-.diseño-uxui,
-.mkt,
-.seo {
-  width: 100%;
-  height: auto;
-  border-radius: 80px;
+
+.diseño-web img,.diseño-uxui img,.mkt img, .seo img{
+  width: 150%;
+  height: 180%;
+  
 }
+
+.diseño-web, .diseño-uxui, .mkt, .seo {
+  padding-bottom: 250px;
+  margin-left: 800px;
+  padding-top: 150px;
+  border-radius: 25%;
+  overflow: hidden;
+}
+
+
 
 h1 {
   color: #cab2ff;
   font-family: "Anton", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -98,7 +130,7 @@ h2 {
   font-family: "Anton", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 h3 {
@@ -151,6 +183,14 @@ footer {
   width: 80px;
   height: 80px;
   bottom: 80px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-img:hover {
+  transform: scale(2.5) translateY(-3px);
+  box-shadow: 0px 0px 10px #07f2b4;
+  border-radius: 70px;
 }
 
 .sobre-nosotros {
@@ -184,14 +224,204 @@ footer {
   width: 1600px;
 }
 
+.servicios2 {
+  display: flex;
+  justify-content: center;
+  padding: 120px;
+  padding-top: 200px;
+}
+
 .lista-de-servicios {
   display: grid;
   grid-template-columns: 1fr;
   margin: 10px;
-  gap: 10px;
-  padding: 10px;
+  gap: 60px;
+  padding: 40px;
+  justify-items: center;
+  padding-top: 200px;
+}
+
+.diseñoux {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  gap: 80px;
+  padding-bottom: 50px;
   justify-items: center;
 }
+
+
+.marketing-digital {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  gap: 80px;
+  padding-bottom: 40px;
+  justify-items: center;
+}
+
+.seo1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  gap: 80px;
+  justify-items: center;
+  padding-bottom: 700px;
+}
+
+.lista-de-servicios img,.diseñoux img,.marketing-digital img,.seo1 img{
+width: 30%;
+height: 90%;
+object-fit: cover;
+}
+
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  min-height: 80vh;
+}
+
+
+.titulo-formulario {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+  gap: 100px;
+}
+
+.formulario {
+  height: 300px;
+  width: 50%;
+  position: absolute;
+  left margin: 150px;
+  padding: 40px;
+  top:30%;
+  left:50%;
+  bottom: 15%;
+}
+
+.texto-form {
+  left margin: 80px;
+  font-size: 30px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+
+.nombre-completo {
+width: 100%;
+padding: 12px;
+font-size: 100px;
+}
+
+.telefono {
+  width: 100%;
+  padding:12px;
+  font-size: 100px;
+}
+
+.correo-electronico {
+  width: 100%;
+padding: 12px;
+font-size: 100px;
+}
+
+.mensaje {
+  width: 100%;
+  padding: 12px;
+  font-size: 100px;
+}
+
+
+.enviar {
+  width: 30%;
+  height: 100px;
+  padding: 100px;
+  font-size: 100px;
+  position: relative;
+  border-radius: 200px;
+  border-color: #0f0f0f;
+  border: 100px;
+  top: 100px;
+  bottom: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #07f2b4;
+}
+
+input  {
+  width: 50vh;
+  height: 50px;
+  font-size: 100px;
+  padding: 10px;
+
+}
+.nuestros-clientes2 {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+}
+
+.reseñas {
+display: grid;
+grid-template-columns:  2fr;
+gap:10px;
+}
+
+.reseña-mujer1 {
+  display: flex;
+  gap:50px;
+  justify-content: space-evenly;
+  padding-top: 150px;
+}
+
+.reseña-hombre1 {
+  display: flex;
+  gap:50px;
+  justify-content: space-evenly;
+  padding-top: 150px;
+  left: 1200px;
+  margin-left: 200px;
+}
+
+.reseña-mujer2 {
+  display: flex;
+  gap:50px;
+  justify-content: space-evenly;
+  padding-top: 150px;
+  left: 200px;
+  margin-left: 120px;
+}
+
+.reseña-hombre2 {
+  display: flex;
+  gap:50px;
+  justify-content: space-evenly;
+  padding-bottom: 300px;
+  padding-top:150px;
+  margin-right: 180px;
+}
+
+.reseña-mujer1 img, .reseña-hombre1 img, .reseña-mujer2 img, .reseña-hombre2 img {
+  width: 10%;
+  height: 80%;
+  position: relative;
+}
+
+.reseña-mujer1 p, .reseña-mujer2 p, .reseña-hombre1 p, .reseña-hombre2 p {
+  font-size: 40px; 
+  margin-left: 80px;
+}
+
+
 
 .nuestras-redes {
   display: flex;
@@ -200,6 +430,8 @@ footer {
   padding: 50px;
   gap: 25px;
 }
+
+
 
 .nuestras-redes h2 {
   font-size: 80%;
@@ -214,11 +446,25 @@ footer {
 .instagram {
   width: 120px;
   height: auto;
+  cursor: pointer;
+}
+
+.instagram:hover {
+  transform: scale(2.5);
+  box-shadow: 0px 0px 10px #07f2b4;
+  border-radius: 70px;
 }
 
 .tik-tok {
   width: 120px;
   height: auto;
+  cursor: pointer;
+}
+
+.tik-tok:hover {
+  transform: scale(2.5) translateY(-3px);
+  box-shadow: 0px 0px 10px #07f2b4;
+  border-radius: 70px;
 }
 
 .derechos {
@@ -226,3 +472,20 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+
+
+.collapse navbar-collapse {
+  background-color: bg-light;
+}
+
+/* Media Queries */
+
+/*Estilos para dispositivos móbiles */
+
+@media (min-width; 992px) {
+  .navbar {
+    background-color: black;
+  }
+}
+
